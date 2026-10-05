@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Synology WebDAV 설정" android:textSize="20sp" android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText android:id="@+id/url" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="서버 URL (예: http://192.168.0.10:5005)" android:inputType="textUri" />
+    <EditText android:id="@+id/folder" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="저장 폴더 (예: photo/NasCam)" android:inputType="text" />
+    <EditText android:id="@+id/user" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="사용자 ID" android:inputType="text" />
+    <EditText android:id="@+id/pass" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="비밀번호" android:inputType="textPassword" />
+
+    <CheckBox android:id="@+id/dateFolder" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="날짜별 하위폴더(yyyy-MM-dd)에 저장" android:checked="true" android:layout_marginTop="8dp" />
+    <CheckBox android:id="@+id/wifiOnly" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Wi-Fi에서만 업로드" android:checked="true" />
+    <CheckBox android:id="@+id/deleteAfter" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="업로드 성공 후 휴대폰 사본 삭제" android:checked="false" />
+
+    <Button android:id="@+id/test" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" android:text="연결 테스트" style="?attr/materialButtonOutlinedStyle" />
+    <TextView android:id="@+id/result" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="8dp" android:textSize="14sp" />
+
+    <Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="저장" />
+</LinearLayout>

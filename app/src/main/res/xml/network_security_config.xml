@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LAN 내 HTTP(5005) WebDAV 허용. 외부 접속은 HTTPS(5006)+정식 인증서 권장 -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
